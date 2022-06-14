@@ -1,0 +1,64 @@
+OhSINT
+This is a TryHackMe room that is accessed via OhSINT
+The question is ‘Are you able to use open source intelligence to solve this challenge?’
+Task 1
+
+
+We first download the task file which is an image. 
+
+This image below is the output
+
+
+When given an image, we first get the metadata in it and we use the Exiftool
+
+Go to the directory where you downloaded the image and run the command below
+
+		exiftool WindowsXP.jpg 
+		
+This will be the output 
+
+
+From the Copyright section we see OWoodflint. We then go to Google Dorks for more information
+
+From the first 3 available links they look relatable to task at hand. We click on them and get to the flags now
+
+Questions
+1. What is this users avatar of? (In the Twitter Link)
+
+
+Answer: cat
+
+2. What city is this person in? (From the same Twitter link there is a Tweet having a BSSID). We go to wiigle.net provided in the Hint section. You need to be Zoomed out to view the purple icon showing the location found
+
+
+Answer: London
+3. Whats the SSID of the WAP he connected to? (To solve this you need to keep Zooming in till you find the WAP SSID)
+
+
+Answer: UnileverWifi
+
+4. What is his personal email address? (In the Github page we find the flag to this)
+
+
+Answer: OWoodflint@gmail.com
+
+5. What site did you find his email address on?
+
+Answer: Github
+
+6. Where has he gone on holiday? (From the Wordpress site)
+
+
+Answer: New York
+
+7. What is this persons password? (The trickiest bit of the whole challenge. Took a while but after checking the Source Code of the blog there was a comment left behind)
+
+
+Answer: pennYDr0pper.!
+
+
+                            
+                        
+
+
+
